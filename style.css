@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "main";
+    src: url(assets/Montserrat-VariableFont.ttf);
+}
+
+:root{
+    --fg-color: hsl(0, 0%, 94%);
+    --muted-color: hsl(0, 0%, 76%);
+    --accent-color: hsl(285, 70%, 68%);
+    --accent-color-muted: hsl(285, 62%, 60%);
+}
+
+body{
+    font-weight: normal;
+    font-size: 1.2rem;
+
+    padding-top: 1.5rem;
+
+    font-family: "main", sans-serif;
+    color: var(--fg-color);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 4rem;
+
+    margin-top: 4rem;
+}
+
+a{
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+iframe {
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border-radius: 25px;
+}
+
+header{
+    margin-left: 1.3rem;
+}
+
+a:hover{
+    text-decoration: underline dotted;
+}
+
+.index{
+    background-image: url(assets/GreenLeaves.webp);
+}
+
+.lucid{
+    background-image: url(assets/BlueMountains.webp);
+}
+
+.container{
+    padding: 1.5rem;
+}
+
+.card-list{
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.card{
+    border-color: var(--muted-color);
+    border-radius: 4px 25px 25px 25px;
+    border-style: solid;
+    backdrop-filter: blur(16px);
+
+    padding: 1.5rem;
+    margin: 1rem;
+
+    width: fit-content;
+}
+
+.link-card{
+    border-color: var(--accent-color-muted);
+    border-radius: 4px 25px 25px 25px;
+    border-style: solid;
+    backdrop-filter: blur(16px);
+
+    padding: 1.5rem;
+    margin: 1rem;
+
+    width: fit-content;
+
+    transition: transform 0.15s ease;
+}
+
+.link-card:hover{
+    transform: translateX(6px);
+}
