@@ -69,6 +69,10 @@ a:hover{
     background-image: url(assets/BlueMountains.webp);
 }
 
+.not_found{
+    background-image: url(assets/BlueScales.webp);
+}
+
 .container{
     padding: 1.5rem;
 }
