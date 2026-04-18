@@ -12,8 +12,10 @@
 :root{
     --fg-color: hsl(0, 0%, 94%);
     --muted-color: hsl(0, 0%, 76%);
+    --fg-color-transparent: rgba(240, 240, 240, 0.08);
     --accent-color: hsl(285, 70%, 68%);
     --accent-color-muted: hsl(285, 62%, 60%);
+    --accent-color-transparent: rgba(202, 116, 231, 0.08);
 }
 
 body{
@@ -87,7 +89,9 @@ a:hover{
     border-color: var(--muted-color);
     border-radius: 4px 25px 25px 25px;
     border-style: solid;
-    backdrop-filter: blur(16px);
+
+    background-color: var(--fg-color-transparent);
+    backdrop-filter: blur(12px);
 
     padding: 1.5rem;
     margin: 1rem;
@@ -99,7 +103,9 @@ a:hover{
     border-color: var(--accent-color-muted);
     border-radius: 4px 25px 25px 25px;
     border-style: solid;
-    backdrop-filter: blur(16px);
+
+    background-color: var(--accent-color-transparent);
+    backdrop-filter: blur(12px);
 
     padding: 1.5rem;
     margin: 1rem;
